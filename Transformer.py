@@ -1,3 +1,6 @@
+# '!python -m spacy download de_core_news_sm')
+# '!python -m spacy download en_core_web_sm')
+
 import os
 from os.path import exists
 import torch
@@ -415,8 +418,6 @@ def make_model(src_vocab, tgt_vocab, N=6, d_model=512, d_ff=2048, h=8, dropout=0
         if p.dim() > 1:
             nn.init.xavier_uniform_(p)
     return model
-
-
 
 
 '''获取模型结构并输出模型参数'''
