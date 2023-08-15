@@ -22,7 +22,9 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 warnings.filterwarnings("ignore")
 RUN_EXAMPLES = True # 设为False则跳过notebook执行
 
+
 # 快捷辅助函数
+
 def is_interactive_notebook():
     return __name__ == "__main__"
 
