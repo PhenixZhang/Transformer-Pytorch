@@ -1,6 +1,3 @@
-# '!python -m spacy download de_core_news_sm')
-# '!python -m spacy download en_core_web_sm')
-
 import os
 from os.path import exists
 import torch
@@ -12,14 +9,9 @@ import time
 from torch.optim.lr_scheduler import LambdaLR
 import pandas as pd
 import altair as alt # 可视化库
-from torchtext.data.functional import to_map_style_dataset
 import spacy
 import GPUtil
 import warnings
-from torch.utils.data.distributed import DistributedSampler
-import torch.distributed as dist
-import torch.multiprocessing as mp
-from torch.nn.parallel import DistributedDataParallel as DDP
 
 
 warnings.filterwarnings("ignore")
