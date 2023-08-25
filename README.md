@@ -13,7 +13,7 @@ PyTorch实现Transformer源码
 
 ## func: attention 包含用于实现QKV矩阵相乘的函数。
 
-## EncoderDecoder: 包含Transformer块的函数和类。
+## class: EncoderDecoder 包含Transformer块的函数和类。
 
 # 使用示例
 
